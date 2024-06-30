@@ -1,0 +1,8 @@
+.detailrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.threedot:hover {
+    background-color: rgb(206, 203, 198);
+}

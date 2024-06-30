@@ -66,12 +66,15 @@
 }
 
 .progress_bar {
-    /* display: table-column; */
-    /* align-items: center; */
-    /* padding: 8px 20px;
-    border-radius: 0px 20px 20px 0px;
-    cursor: pointer; */
+
     padding: 0px 20px 8px;
+}
+
+.progress_bar span {
+
+    display: block;
+    font-size: 13px;
+    color: #333;
 }
 
 .storagebutton {
@@ -82,4 +85,20 @@
     color: #0957D0;
     font-weight: 400;
     font-size: 16px;
+    cursor: useEffect;
+}
+
+.sidebar_option span {
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(78, 78, 78);
+}
+
+.sidebar_option-active span {
+    color: #1367d2
+}
+
+.sidebar_option-active svg {
+    color: #1367d2
 }

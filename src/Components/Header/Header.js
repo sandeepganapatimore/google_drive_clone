@@ -6,7 +6,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-function Header() {
+function Header({ searchValue, setSearchValue }) {
     return (
         <div class="header" >
             <div className="header_logo">
@@ -15,7 +15,7 @@ function Header() {
             </div>
             <div className="header_search">
                 <SearchIcon />
-                <input type='text' placeholder='Search in Drive' />
+                <input type='text' placeholder='Search in Drive' value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
                 <FormatAlignCenterIcon />
             </div>
             <div className="header_icons">
